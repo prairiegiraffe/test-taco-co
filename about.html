@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Test Taco Co - Gillette's premier taco testing company. Discover our story, meet our team, and join our testing panel.">
+    <title>About Us - Test Taco Co</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background: #FFFFFF;
+        }
+        header {
+            background: #FFFFFF;
+            padding: 1rem 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        nav a {
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+            color: #333333;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }
+        .page-banner {
+            background: #F5F5F5;
+            padding: 8rem 1.5rem 4rem;
+            text-align: center;
+        }
+        h1, h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        h1 {font-size: 3.5rem;}
+        h2 {font-size: 2.5rem;}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+        .story-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        @media (min-width: 768px) {
+            .story-section {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .team-member {
+            text-align: center;
+            padding: 1rem;
+        }
+        .team-member img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .value-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin: 1rem 0;
+        }
+        .cta-strip {
+            background: #FF6B35;
+            color: white;
+            padding: 4rem 1.5rem;
+            text-align: center;
+        }
+        .btn-primary {
+            background: #FF6B35;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            text-decoration: none;
+            display: inline-block;
+            margin: 1rem;
+        }
+        .btn-secondary {
+            background: transparent;
+            color: #004E89;
+            border: 2px solid #004E89;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            text-decoration: none;
+            display: inline-block;
+            margin: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><strong>Test Taco Co</strong></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-banner">
+        <h1>About Test Taco Co</h1>
+        <p>Ensuring taco excellence through rigorous testing</p>
+    </section>
+
+    <section class="container story-section">
+        <div>
+            <h2>Our Story</h2>
+            <p>Founded in Gillette, Wyoming, Test Taco Co has revolutionized the way we think about taco quality assurance. Our dedicated team of experts works tirelessly to ensure every taco meets the highest standards of taste, texture, and presentation.</p>
+        </div>
+        <div>
+            <h2>Our Mission</h2>
+            <p>We're committed to elevating the taco experience through systematic testing and analysis. Our innovative approaches help identify the perfect combination of ingredients and preparation methods.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Our Team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="placeholder-team1.jpg" alt="Team member">
+                <h3>Sarah Johnson</h3>
+                <p>Chief Taco Officer</p>
+            </div>
+            <div class="team-member">
+                <img src="placeholder-team2.jpg" alt="Team member">
+                <h3>Mike Rodriguez</h3>
+                <p>Head of Quality Testing</p>
+            </div>
+            <div class="team-member">
+                <img src="placeholder-team3.jpg" alt="Team member">
+                <h3>Lisa Chen</h3>
+                <p>Flavor Analysis Director</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Our Values</h2>
+        <div class="values-grid">
+            <div class="value-card">
+                <h3>Quality First</h3>
+                <p>We maintain the highest standards in taco testing and evaluation.</p>
+            </div>
+            <div class="value-card">
+                <h3>Innovation</h3>
+                <p>Constantly developing new testing methodologies and criteria.</p>
+            </div>
+            <div class="value-card">
+                <h3>Integrity</h3>
+                <p>Honest, unbiased testing results you can trust.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-strip">
+        <h2>Ready to Join Our Testing Panel?</h2>
+        <p>Be part of the future of taco excellence</p>
+        <a href="contact.html" class="btn-primary">Join Our Testing Panel</a>
+        <a href="services.html" class="btn-secondary">Learn About Our Process</a>
+    </section>
+
+    <footer class="container">
+        <p>Contact Us: <a href="tel:3072145632">307-214-5632</a> | <a href="mailto:test@email.com">test@email.com</a></p>
+        <p>Location: Gillette, WY</p>
+    </footer>
+</body>
+</html>
